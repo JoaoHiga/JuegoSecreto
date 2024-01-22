@@ -1,6 +1,6 @@
 let numeroMaximo = 10;
 let numeroSecreto = 0;
-let intentosMaximo = 2;
+let intentosMaximo = 4;
 let intentos = 0;
 let numerosUsados = [];
 
