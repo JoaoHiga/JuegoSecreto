@@ -36,12 +36,11 @@ function limpiarCaja() {
 
 function verificaIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('numeroUsuario').value);
-    
+    intentos += 1;
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p', `Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
-        intentos += 1;
         limpiarCaja();
         if (numeroDeUsuario > numeroSecreto) {
             asignarTextoElemento('p', 'El número secreto es menor');
